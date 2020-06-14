@@ -1,0 +1,49 @@
+.cloud {
+    margin-bottom: 34px;
+    padding-top: 20px;
+	position:relative;
+}
+.cloud::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 20px;
+	border-right: 60px solid @white;
+	background: @white;
+	border-bottom-right-radius: 80px 50px;
+}
+.cloud::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 22px;
+	background: #f9f9fa;
+	border-bottom-left-radius: 85px 60px;
+	-webkit-transform: translate(1px, -2px);
+	transform: translate(1, -2px);
+}
+.cloud__wrapper {
+	display: flex;
+	align-items: center;
+	padding: 14px 40px;
+	background-color: @white;
+    border-radius: 55px;
+    border-top-left-radius: 0;
+}
+.cloud__img {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: @duck-egg-blue;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
