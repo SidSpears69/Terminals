@@ -1,0 +1,24 @@
+.ordered-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 74%;
+    padding: 0;
+    counter-reset: myCounter;
+    list-style: none;
+    justify-content: space-between;
+}
+.ordered-list__item {
+    width: 49%;
+    border-left: 1px solid @silver-three;
+    padding-left: 16px;
+    margin-bottom: 47px;
+    margin-right: 5px;
+    &::before {
+        counter-increment: myCounter;
+        content:counter(myCounter)".";
+        font-size: 23px;
+        font-weight: 600;
+        color: @green-two;
+        display: block;
+      }
+}

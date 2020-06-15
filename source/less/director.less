@@ -1,0 +1,43 @@
+.director {
+    padding-bottom: 0;
+}
+.director__container {
+    padding-bottom: 67px;
+    position: relative;
+&::before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 400px;
+    left: -118px;
+    bottom: 0;
+    background: url("../img/reiza.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+}
+.director__left {
+	width: 35%;
+	margin-left: auto;
+	margin-right: 91px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.director__name {
+    font-weight: 600;
+}
+.director__message {
+    font-size: 12px;
+}
+.director__right {
+    padding: 35px;
+    & .list {
+        margin-bottom: 0;
+    }
+}
+.director .row {
+    z-index: 10;
+    position: relative;
+}

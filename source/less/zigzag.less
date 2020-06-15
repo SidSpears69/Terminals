@@ -1,0 +1,27 @@
+  .zigzag {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -18px;
+      top: 0;
+      background: linear-gradient(50deg, #ffffff 50%, transparent 0) 0 50%, linear-gradient(135deg, #ffffff 50%, transparent 0) 0 50%;
+      background-repeat: repeat-y;
+      background-size: 18px 18px;
+      width: 18px;
+      height: 100%;
+      top: 0;
+    }
+
+    &--bottom::after {
+      background: linear-gradient(-45deg, transparent 50%, #ffffff 0) 0 50%, linear-gradient(45deg, transparent 50%, #ffffff 0) 0 50%;
+      background-size: 18px 18px;
+      height: 18px;
+      width: 100%;
+      bottom: -18px;
+      top: auto;
+      background-repeat: repeat-x;
+      left: 0;
+      right: auto;
+    }
+  }

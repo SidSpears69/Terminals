@@ -5,9 +5,23 @@
     }
     &--gray {
         background-color: @pale-grey-two;
+        & .angle::after {
+            border-top: 50px solid @pale-grey-two;
+        }
+    }
+    &--bg {
+        background: url("../img/integrated.png") no-repeat right;
+        border-top: 1px solid @silver-three;
+        background-size: contain;
     }
 }
 .page-section__text {
     margin-top: 12px;
     margin-bottom: 40px;
+}
+.page-section__title {
+    max-width: 90%;
+}
+.page-section__subtitle {
+    margin-bottom: 26px;
 }
